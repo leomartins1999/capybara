@@ -3,6 +3,8 @@
 class Capybara::Driver::Base
   attr_writer :session
 
+  alias_method :bisit, :visit
+
   def current_url
     raise NotImplementedError
   end
